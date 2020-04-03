@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: black;
+    background-image: url('img/251620-rev.jpg');
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item {
+    border: 1px solid white;
+    padding: 1em;
+}
+
+.grid-container {
+    grid-area: "table";
+    background-color: #00000069;
+    position: static;
+    color: #ffffff;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 200px 200px;
+    grid-template-areas: "head head"
+                         "label1 latitude"
+                         "label2 longitude";
+    padding: 2em;
+}
+
+.header {
+    grid-area: "head";
+    padding-bottom: 2em;
+}
+
+.label1 {
+    grid-area: "label1";
+    border-top-left-radius: 10px;
+}
+
+.label2 {
+    grid-area: "label2";
+}
+
+.latitude {
+    grid-area: "latitude";
+}
+
+.longitude {
+    grid-area: "longitude";
+    border-bottom-right-radius: 10px;
+}
+
+#map {
+    grid-area: "map";
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    background-color: #00000069;
+    height: 80vh;
+    width: 48%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+button {
+    font-weight: 900;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.75em 2em;
+    cursor: pointer;
+}
+
+button:hover  {
+    background-color: #292929;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSKUMIfv6rW3J__iz3OLYn9DPueUKiqLU&callback=initMap"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="spinner.css">
+    <title>ISS Locator</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="grid-container">
+            <div class="header">
+                <h1>ISS Locator</h1>
+            </div>
+            <div class="main"></div>
+                <div class="item label1">Latitude</div>
+                <div class="item latitude">
+                    <div class="loader">
+                        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                    </div>
+                </div>
+                <div class="item label2">Longitude</div>
+                <div class="item longitude"><div class="loader"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div></div>
+            </main>
+        </div>
+        <div id="map">
+            <div class="spinner">
+                <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
