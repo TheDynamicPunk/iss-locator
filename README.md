@@ -1,6 +1,10 @@
 # iss-locator
 Simple app using ISS location API and mapping the coordinates onto the Google Map in real-time.
 
-Check it out here: iss-pathfinder.netlify.com
+How to use:
 
-The project files are not here due to some privacy policies, but you can find the working example above.
+1. Download .zip folder
+2. Run the index.html file
+3. Track ISS right here in your browser!
+
+Have a Good Day!
